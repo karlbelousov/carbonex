@@ -1,5 +1,53 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  color: var(--color-black);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  padding-block: 25px;
+}
+
+.header__menu-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.header__menu-link {
+  display: block;
+}
+
+.header__contacts {
+  display: flex;
+  column-gap: 50px;
+}
+
+.header__contacts-body {
+  display: grid;
+  row-gap: 4px;
+  border-bottom: 1px dashed var(--color-black-32);
+}
+
+.header__contacts-phone {
+  position: relative;
+  padding-left: 36px;
+  min-height: 22px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../icons/phone.svg');
+
+    @include square(24px);
+
+    top: 0;
+    left: 0;
+  }
+}
+
+.header__contacts-link {
+  padding: 3px;
+  color: var(--color-black-32);
 }
