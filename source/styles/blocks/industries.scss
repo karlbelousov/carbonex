@@ -1,0 +1,25 @@
+.industries__inner {
+  display: grid;
+  row-gap: 36px;
+}
+
+.industries__header {
+  display: grid;
+  row-gap: 10px;
+  max-width: 920px;
+  justify-self: center;
+}
+
+.industries__title,
+.industries__description {
+  text-align: center;
+}
+
+.industries__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 14px 0;
+}

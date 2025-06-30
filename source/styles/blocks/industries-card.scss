@@ -1,0 +1,29 @@
+.industries-card {
+  display: grid;
+  row-gap: 10px;
+}
+
+.industries-card--active {
+  color: var(--color-blue);
+}
+
+.industries-card__image {
+  @include square(80px);
+
+  justify-self: center;
+}
+
+.industries-card__title {
+  font-family: var(--font-family-play);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.industries-card__link {
+  display: block;
+  text-align: center;
+}
