@@ -1,0 +1,23 @@
+.advantages {
+  min-height: 308px;
+  background-color: var(--color-white);
+  background-image: url('../../images/advantages/advantages_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.advantages__inner {
+  display: grid;
+  row-gap: 91px;
+}
+
+.advantages__title {
+  text-align: center;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
