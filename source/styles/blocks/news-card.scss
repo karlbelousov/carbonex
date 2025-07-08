@@ -1,0 +1,21 @@
+.news-card {
+  max-width: 445px;
+  min-height: 435px;
+  display: grid;
+  row-gap: 24px;
+}
+
+.news-card__image {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.news-card__body {
+  display: grid;
+  row-gap: 10px;
+}
+
+.news-card__link {
+  border-radius: 6px;
+  overflow: hidden;
+}
