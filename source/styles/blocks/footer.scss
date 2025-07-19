@@ -13,12 +13,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 10px;
+
+  @include mobile-s {
+    display: grid;
+    row-gap: 20px;
+    padding: 0 60px;
+  }
+}
+
+.footer__menu {
+  @include tablet {
+    display: none;
+  }
 }
 
 .footer__contacts {
   display: flex;
   align-items: center;
   column-gap: 8px;
+
+  @include mobile-m {
+    display: grid;
+  }
 }
 
 .footer__contacts-link {
@@ -29,7 +46,13 @@
 .footer__bottom {
   display: flex;
   align-items: center;
-  column-gap: 32px;
+  column-gap: 10px;
+
+  @include mobile-s {
+    display: grid;
+    row-gap: 20px;
+    padding: 0 29px;
+  }
 }
 
 .footer__copyright {
@@ -40,4 +63,16 @@
 .footer__email {
   display: block;
   opacity: 0.5;
+}
+
+.footer__email--top {
+  @include tablet-above {
+    display: none;
+  }
+}
+
+.footer__email--bottom {
+  @include tablet {
+    display: none;
+  }
 }
