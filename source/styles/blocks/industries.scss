@@ -1,22 +1,8 @@
-.industries__inner {
-  display: grid;
-  row-gap: 36px;
-
-  @include mobile-s {
-    gap: 30px;
-  }
-}
-
 .industries__header {
   display: grid;
   row-gap: 10px;
   max-width: 920px;
   justify-self: center;
-}
-
-.industries__title,
-.industries__description {
-  text-align: center;
 }
 
 .industries__list {

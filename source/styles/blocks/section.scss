@@ -1,0 +1,13 @@
+.section__inner {
+  display: grid;
+  row-gap: 36px;
+
+  @include mobile-s {
+    gap: 30px;
+  }
+}
+
+.section__title,
+.section__description {
+  text-align: center;
+}
