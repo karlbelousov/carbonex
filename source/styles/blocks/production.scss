@@ -1,6 +1,10 @@
 .production__inner {
   display: grid;
   row-gap: 36px;
+
+  @include mobile-s {
+    gap: 30px;
+  }
 }
 
 .production__title {
@@ -10,5 +14,10 @@
 .production__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
+
+  @include mobile {
+    gap: 30px;
+  }
 }

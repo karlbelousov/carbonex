@@ -3,6 +3,14 @@
   min-height: 435px;
   display: grid;
   row-gap: 24px;
+
+  @include tablet {
+    max-width: 354px;
+  }
+
+  @include mobile-s {
+    @include square(292px);
+  }
 }
 
 .news-card__image {

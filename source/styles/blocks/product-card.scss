@@ -5,6 +5,14 @@
   position: relative;
   border-radius: 6px;
   overflow: hidden;
+
+  @include tablet {
+    max-width: 354px;
+  }
+
+  @include mobile-s {
+    @include square(292px);
+  }
 }
 
 .product-card__content {

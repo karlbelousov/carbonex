@@ -6,6 +6,10 @@
 .contacts__inner {
   display: grid;
   row-gap: 36px;
+
+  @include mobile-s {
+    row-gap: 30px;
+  }
 }
 
 .contacts__title {
@@ -14,9 +18,12 @@
 
 .contacts__body {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 20px;
+  gap: 20px;
+
+  @include tablet {
+    display: grid;
+  }
 }
 
 .contacts__content {
@@ -24,6 +31,11 @@
   display: grid;
   row-gap: 32px;
   padding-top: 67px;
+
+  @include tablet {
+    order: 1;
+    padding-top: 0;
+  }
 }
 
 .contacts__content-title {
@@ -34,6 +46,10 @@
 .contacts__list {
   display: grid;
   row-gap: 32px;
+
+  @include mobile {
+    row-gap: 20px;
+  }
 }
 
 .contacts__item {
@@ -53,19 +69,13 @@
 }
 
 .contacts__image {
-  width: 684px;
-  height: 340px;
-  position: relative;
+  justify-self: end;
+  max-width: 684px;
   margin-top: 36px;
+  box-shadow: 25px -30px 0px 0px rgba(0, 127, 167, 0.2);
 
-  &::after {
-    position: absolute;
-    content: '';
-    left: 30px;
-    top: -30px;
-    width: 684px;
-    height: 340px;
-    background-color: var(--color-blue);
-    opacity: 0.2;
+  @include tablet {
+    max-width: 100%;
+    justify-self: normal;
   }
 }

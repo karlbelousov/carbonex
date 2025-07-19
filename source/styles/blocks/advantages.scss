@@ -1,14 +1,18 @@
 .advantages {
   min-height: 308px;
-  background-color: var(--color-white);
-  background-image: url('../../images/advantages/advantages_bg.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
+
+  @include mobile {
+    min-height: 596px;
+  }
 }
 
 .advantages__inner {
   display: grid;
   row-gap: 91px;
+
+  @include mobile-s {
+    gap: 30px;
+  }
 }
 
 .advantages__title {
@@ -20,4 +24,9 @@
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
+  padding: 55px 0;
+  background-color: var(--color-white);
+  background-image: url('../../images/advantages/advantages_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

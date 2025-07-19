@@ -1,6 +1,10 @@
 .industries__inner {
   display: grid;
   row-gap: 36px;
+
+  @include mobile-s {
+    gap: 30px;
+  }
 }
 
 .industries__header {
@@ -22,4 +26,12 @@
   justify-content: center;
   gap: 70px;
   padding: 14px 0;
+
+  @include laptop {
+    padding: 0;
+  }
+
+  @include mobile-s {
+    gap: 30px;
+  }
 }

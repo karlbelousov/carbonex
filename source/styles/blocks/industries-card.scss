@@ -1,4 +1,5 @@
 .industries-card {
+  max-width: 250px;
   display: grid;
   row-gap: 10px;
 }
@@ -11,6 +12,10 @@
   @include square(80px);
 
   justify-self: center;
+}
+
+.industries-card__title {
+  text-align: center;
 }
 
 .industries-card__link {
